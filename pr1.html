@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom right, #F6A5C0, #8AC6D0);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-details {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-details h1 {
+            font-size: 2.5rem;
+            color: #704873;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-details p {
+            font-size: 1.1rem;
+            color:black;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-details p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Adding color to links */
+        .project-details a {
+            color:#704873;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .project-details a:hover {
+            color: #006986;
+        }
+        #toggleDetails {
+        background-color:#F6A5C0;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.2s;
+         }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <section class="project-details">
+            <h1>User Management Project</h1>
+            <p>Description: User Data Management</p>
+            <p style="text-align: justify;">Developed a user management application using the MERN (MongoDB, Express, React, Node.js) stack. Implemented a user form with fields for name, email, and age, allowing users to enter their details. Utilized React for the frontend to create a dynamic and responsive user interface. Implemented server-side logic using Express.js to handle API requests and perform CRUD (Create, Read, Update, Delete) operations. Stored user data in a MongoDB database, providing a reliable and scalable data storage solution. Implemented validation and error handling to ensure data integrity and enhance user experience. Used modern frontend tools and libraries such as React Router, Axios, and Bootstrap for efficient routing, API communication, and responsive design.</p>
+            
+            <button id="toggleDetails">Wanna Know More !!</button><br>
+            <div id="additionalDetails" style="display: none;">
+            <a href="https://github.com/Jayavani9?tab=repositories">Click here to check out my GitHub repositories</a>
+        </div>
+
+    <script>
+    const toggleButton = document.getElementById('toggleDetails');
+    const additionalDetails = document.getElementById('additionalDetails');
+
+    toggleButton.addEventListener('click', () => {
+        if (additionalDetails.style.display === 'none') {
+            additionalDetails.style.display = 'block';
+        } else {
+            additionalDetails.style.display = 'none';
+        }
+    });
+    </script>
+
+</body>
+</html>
