@@ -12,12 +12,12 @@
 }
 
 :root {
-    /* --bg-color: #1f242d; */
-    --bg-color: #8F84AD;
-    /*--second-bg-color: #323946;*/
-    --second-bg-color: #8F84AD;
+    --bg-color: #062336; 
+   /* --bg-color: #8F84AD; */
+    /* --second-bg-color: #8F84AD; */
+    --second-bg-color: #062336; 
     --text-color: #fff;
-    --main-color: #E0B0FF;
+    --main-color:#f64c72;
 }
 
 *::selection {
@@ -34,6 +34,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
+
 
 section {
     min-height: 100vh;
